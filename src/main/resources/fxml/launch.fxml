@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="puckgame.javafx.controller.LaunchController">
+   <children>
+      <TextField fx:id="p1name" layoutX="48.0" layoutY="484.0" prefHeight="54.0" prefWidth="224.0" promptText="Type in your name!">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="p2name" layoutX="324.0" layoutY="484.0" prefHeight="54.0" prefWidth="224.0" promptText="Type in your name!">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label alignment="CENTER" layoutX="48.0" layoutY="449.0" prefHeight="28.0" prefWidth="224.0" text="You will be the Blue." textAlignment="CENTER" textFill="BLUE">
+         <font>
+            <Font name="DejaVu Serif Condensed Italic" size="18.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="324.0" layoutY="449.0" prefHeight="28.0" prefWidth="224.0" text="You will be the Red." textFill="RED">
+         <font>
+            <Font name="DejaVu Serif Condensed Italic" size="18.0" />
+         </font></Label>
+      <Button fx:id="startButton" alignment="CENTER" layoutX="217.0" layoutY="126.0" mnemonicParsing="false" onAction="#startGame" prefHeight="54.0" prefWidth="153.0" stylesheets="@../css/button.css" text="Start" textAlignment="CENTER">
+         <font>
+            <Font name="Cantarell Extra Bold" size="23.0" />
+         </font></Button>
+      <Button fx:id="exitButton" alignment="CENTER" layoutX="217.0" layoutY="264.0" mnemonicParsing="false" onAction="#exitGame" prefHeight="54.0" prefWidth="153.0" stylesheets="@../css/button.css" text="Exit" textAlignment="CENTER">
+         <font>
+            <Font name="Cantarell Extra Bold" size="23.0" />
+         </font></Button>
+      <Button fx:id="highScoreButton" alignment="CENTER" layoutX="217.0" layoutY="194.0" mnemonicParsing="false" onAction="#handleHighScoreButton" prefHeight="54.0" prefWidth="153.0" stylesheets="@../css/button.css" text="Highscores" textAlignment="CENTER">
+         <font>
+            <Font name="Cantarell Extra Bold" size="17.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="48.0" layoutY="412.0" prefHeight="28.0" prefWidth="224.0" text="Player One">
+         <font>
+            <Font name="TSCu_Paranar Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="324.0" layoutY="412.0" prefHeight="28.0" prefWidth="224.0" text="Player Two">
+         <font>
+            <Font name="TSCu_Paranar Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-7.0" layoutY="31.0" prefHeight="47.0" prefWidth="600.0" text="Viki Játék" textAlignment="CENTER">
+         <font>
+            <Font name="Inconsolata Black" size="41.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
